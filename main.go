@@ -54,10 +54,10 @@ type PlotInfo struct {
 }
 
 func main() {
-	cmd := exec.Command("ping", "127.0.0.1 -n 6 > nul")
-	cmd.Start()
+	/* cmd := exec.Command("ping", "127.0.0.1 -n 6 > nul")
+	cmd.Start() */
 	
-	pi := make(chan struct{})
+	/* pi := make(chan struct{})
 	for {
 		select {
 		case <-channel:
@@ -67,7 +67,7 @@ func main() {
 		case <- cmd.Wait():
 			break
 		}
-	}
+	} */
 	/* pi := PlotInfo{}
 	pi.PlotSize = 32
 	pi.Ram = 3809
@@ -105,7 +105,7 @@ type LockedCounter struct {
 //Decide when to run a plot
 func ExplicitServiceRunner(config ExplicitConfig) {
 	updateChan := make(chan UpdateChan, config.MaxRunning)
-	cancelChannel := make(chan struct{})
+	//cancelChannel := make(chan struct{})
 	currentRunning := LockedCounter{count: 0}
 	numFinished := 0
 	//Need to remove itself from the currentList
