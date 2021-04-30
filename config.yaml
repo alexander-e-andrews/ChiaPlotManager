@@ -1,0 +1,36 @@
+RunSettings:
+  Loop: false
+  TimeInstances:
+    - FilePattern: [0, 0]
+      StartPhase: 2
+      StartTogether: 1
+      MaxRunningInstance: 2
+    - FilePattern: [1, 1]
+      StartPhase: 2
+      StartTogether: 1
+      MaxRunningInstance: 2
+    - FilePattern: [1, 2]
+      StartPhase: 2
+      StartTogether: 1
+      MaxRunningInstance: 2
+FileLocations:
+  - TempDir1: "Y:/templot1"
+    TempDir2: "Z:/templot2"
+    FinalDir: "Y:/FinalizedPlots"
+  - TempDir1: "Y:/templot1"
+    TempDir2: "Y:/templot1"
+    FinalDir: "Y:/FinalizedPlots"
+  - TempDir1: "Z:/templot2"
+    TempDir2: "Z:/templot2"
+    FinalDir: "Y:/FinalizedPlots"
+PlotSize: 32
+RAM:
+  MinSize: 3809
+  MaxSize: 3809
+Threads:
+  MinThreads: 2
+  MaxThreads: 2
+Buckets:
+  MinBuckets: 64
+  MaxBuckets: 156
+DisableBitfield: false

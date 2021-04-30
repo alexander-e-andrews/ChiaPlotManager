@@ -1,0 +1,21 @@
+FileLocationsSetting: Array containing the order to use FileLocations, 0 indexed. Use T to set a timer gap where all process will finish before starting again
+FileLocations: Array of these temp dir folders, order matter
+  - TempDir1: -t command
+    TempDir2: -2 command
+    FinalDir: -f command
+PlotSize: -k the size of plot, Defaults to 32 if missing, as is current suggestion
+RAM: Ram changes, will randomize size in-between 
+  MaxSize: The maximum amount of ram that a single plotter will use
+  MinSize: The minimum amount of ram that a single plotter will use 
+FarmerPK: -f The farmer public key, if unassigned, will not be used
+PoolPK: -p Pool public key, if unassigned, will not be used
+Fingerprint: -a Some fingerprint thing, if unassigned, will not be used
+Threads: -r The number of threads to use, suggested 2-4
+  MinThreads: 2
+  MaxThreads: 4
+Buckets: -u The number of buckets, more buckets -> less ram, more disk writes
+  MinBuckets: min buckets to use
+  MaxBuckets: max buckets to use
+DisableBitfield: -e set to true to disable bitfield, false or ommmit this field to use bitfield
+  ["0", "0", "T", "1", "1", "T", "1", "2", "T"]
+

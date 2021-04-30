@@ -1,0 +1,21 @@
+Loop: false
+MaxRunning: 1
+Tasks:
+  - PlotSize: 25
+    Ram: 3806
+    TempDir1: "Y:/tempplot1"
+    TempDir2: "Y:/tempplot1"
+    FinalDir: "Y:/FinalizedPlotsTest"
+    NumThreads: 2
+    NumBuckets: 100
+    DisableBitfield: false
+    StartAfter: 2
+  - PlotSize: 25
+    Ram: 3806
+    TempDir1: "Y:/tempplot1"
+    TempDir2: "Y:/tempplot1"
+    FinalDir: "Y:/FinalizedPlotsTest"
+    NumThreads: 2
+    NumBuckets: 110
+    DisableBitfield: false
+    StartAfter: 2
